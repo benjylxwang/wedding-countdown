@@ -1,0 +1,50 @@
+body {
+    background-color: #000414;
+}
+
+@media (orientation: landscape) {
+    .countdown_container {
+        width: 60%;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        text-align:center;
+        font-size: 1.2vw;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+    .countdown_number {
+        float: left;
+        width: 20%;
+    }
+
+    .countdown_number number {
+        font-size: 6vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .countdown_container {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-family: monospace;
+        text-align:center;
+        font-size: 2vh;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .countdown_number {
+        width: 100%;
+    }
+
+    .countdown_number number {
+        font-size: 7vh;
+    }
+}
