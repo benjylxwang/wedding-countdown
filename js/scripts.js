@@ -13,7 +13,7 @@ function setup() {
     seccount = document.getElementById("secs").getElementsByTagName("number")[0];
     mscount = document.getElementById("ms").getElementsByTagName("number")[0];
 
-    endtime = new Date(2021, 7, 3, 12, 0, 0, 0);
+    endtime = new Date(2021, 6, 3, 12, 0, 0, 0);
 
     window.setInterval(getCountdown, 1);
 }
