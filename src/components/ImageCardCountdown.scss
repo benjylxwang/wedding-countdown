@@ -1,0 +1,86 @@
+.image-card {
+  height: 491px;
+  .image {
+    height: 491px;
+  }
+  .no-padding {
+    padding: 0;
+  }
+  .intro-text {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+  }
+}
+
+.countdown {
+  text-align: center;
+}
+
+.countdown_number {
+  float: left;
+  width: 33.33333333333%;
+}
+
+#secs,
+#ms {
+  width: 50%;
+}
+
+.countdown_number number {
+  font-size: 7vh;
+}
+
+@media (min-width: 768px) {
+  .image-card {
+    height: 759px;
+    .image {
+      height: 759px;
+    }
+    .intro-text {
+      padding-top: 250px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+
+  .countdown_number {
+    float: left;
+    width: 20%;
+  }
+
+  .countdown_number number {
+    font-size: 6vw;
+  }
+
+  #secs,
+  #ms {
+    width: 20%;
+  }
+}
