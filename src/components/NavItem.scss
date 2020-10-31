@@ -8,6 +8,7 @@
   &.active,
   &:hover {
     color: $primary !important;
+    // text-shadow: 1px 1px #ada200;
   }
 }
 @media (min-width: 992px) {

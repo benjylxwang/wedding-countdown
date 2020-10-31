@@ -1,4 +1,4 @@
 ---
-brand: "Start Bootstrap"
+brand: "Benjy&Cara"
 menuText: "Menu "
 ---

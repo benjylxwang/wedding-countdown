@@ -1,7 +1,7 @@
 ---
 header: "It's Nice To Meet You"
 subheader: "我们要结婚了..."
-imageFileName: "header-bg.jpg"
+imageFileName: "header-bg-cropped.png"
 jumpToAnchor: "Services"
 jumpToAnchorText: "更多"
 daysText: "天"

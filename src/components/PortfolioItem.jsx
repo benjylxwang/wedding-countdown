@@ -29,39 +29,18 @@ const PortfolioItem = ({
   return (
     <>
       <Col md={4} sm={6} className="portfolio-item">
-        <a
-          role="button"
-          tabIndex={-1}
-          className="portfolio-link"
-          data-toggle="modal"
-          onClick={handleShowDetail}
-        >
-          <Image
-            className="img-fluid"
-            fileName={imageFileName}
-            alt={imageAlt || header || subheader}
-          />
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
-              <Icon iconName="PlusIcon" size="2x" />
-            </div>
-          </div>
-        </a>
+        <Image
+          className="img-fluid"
+          fileName={imageFileName}
+          alt={imageAlt || header || subheader}
+        />
         <div className="portfolio-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
+          <hr/>
+          {content ? <p className="text-content">{content}</p> : null}
         </div>
       </Col>
-      <PortfolioDetailDialog
-        show={showDetail}
-        onHide={handleHideDetail}
-        imageFileName={imageFileNameDetail || imageFileName}
-        imageAlt={imageAltDetail || imageAlt}
-        header={header}
-        subheader={subheader}
-        content={content}
-        extraInfo={extraInfo}
-      />
     </>
   );
 };

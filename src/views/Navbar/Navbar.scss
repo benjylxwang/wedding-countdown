@@ -1,6 +1,6 @@
 // Styling for the navbar
 .navbar-root {
-  background-color: $gray-900;
+  background-color: $navbar-col;
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -12,7 +12,7 @@
     @include heading-font;
   }
   .navbar-brand {
-    color: $primary !important;
+    color: $primary;
     @include script-font;
     &.active,
     &:active,
@@ -32,6 +32,7 @@
     border: none;
     background-color: transparent;
     .navbar-brand {
+      color: white !important;
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -40,8 +41,9 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
-      background-color: $gray-900;
+      background-color: $navbar-col;
       .navbar-brand {
+        color: $primary !important;
         font-size: 1.25em;
         padding: 12px 0;
       }

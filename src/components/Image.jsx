@@ -14,8 +14,9 @@ const Image = ({ fileName, alt, ...restProps }) => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 1920) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 1920) {
+                  # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
+                  ...GatsbyImageSharpFluid_noBase64
                 }
               }
             }
@@ -30,8 +31,8 @@ const Image = ({ fileName, alt, ...restProps }) => (
         return null;
       }
 
-      const imageSizes = image.node.childImageSharp.sizes;
-      return <Img alt={alt} sizes={imageSizes} {...restProps} />;
+      const fluid = image.node.childImageSharp.fluid;
+      return <Img alt={alt} fluid={fluid} {...restProps} />;
     }}
   />
 );

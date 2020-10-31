@@ -29,7 +29,7 @@ const PortfolioDetailDialog = ({
       <Modal.Body className="mx-auto">
         <p className="item-intro text-muted">{subheader}</p>
         <Image
-          className="img-fluid d-block"
+          className="img-fluid d-block detail-image"
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
         />
@@ -40,7 +40,7 @@ const PortfolioDetailDialog = ({
         <div className="mx-auto">
           <Button variant="primary" onClick={onHide}>
             <Icon iconName="CloseIcon" />
-            &nbsp; Close Project
+            &nbsp; Close
           </Button>
         </div>
       </Modal.Footer>

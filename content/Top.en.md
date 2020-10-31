@@ -1,7 +1,7 @@
 ---
 header: "It's Nice To Meet You"
-subheader: "The wedding starts in..."
-imageFileName: "header-bg.jpg"
+subheader: "We're getting married in..."
+imageFileName: "header-bg-cropped.png"
 jumpToAnchor: "Services"
 jumpToAnchorText: "Tell Me More"
 daysText: "Days"

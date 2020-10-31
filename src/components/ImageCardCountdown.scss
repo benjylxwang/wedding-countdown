@@ -1,7 +1,18 @@
 .image-card {
   height: 491px;
+  background-color: grey;
+
   .image {
     height: 491px;
+    width: 100%;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+    margin-left: auto;
+    margin-right: auto;
+
+    div {
+      background-color: grey;
+      height: 100%;
+    }
   }
   .no-padding {
     padding: 0;
@@ -14,6 +25,7 @@
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
+      text-shadow: 2px 2px #000000;
       @include serif-font;
     }
     .intro-heading {
@@ -42,22 +54,31 @@
 
 .countdown_number number {
   font-size: 7vh;
+  text-shadow: 2px 2px #000000;
+}
+
+.countdown_number p {
+  font-size: 3vh;
+  text-shadow: 1px 1px #000000;
 }
 
 @media (min-width: 768px) {
   .image-card {
-    height: 759px;
+    height: 100vh;
+    min-height: 800px;
     .image {
-      height: 759px;
+      height: 100vh;
+      min-height: 800px;
     }
     .intro-text {
-      padding-top: 250px;
+      padding-top: 350px;
       padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
-        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 0;
         @include serif-font;
       }
       .intro-heading {

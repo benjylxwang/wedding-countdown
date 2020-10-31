@@ -127,7 +127,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="Time to Get Married" keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
@@ -149,7 +149,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
           ) : null;
         })
       }
-      <Footer frontmatter={footerNode.frontmatter} />
+      {/* <Footer frontmatter={footerNode.frontmatter} /> */}
     </>
   );
 };
