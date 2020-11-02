@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Container, Row, Col } from "react-bootstrap";
-import * as SocialIcons from "components/SocialIcons";
 
 const Footer = ({ frontmatter }) => {
   if (!frontmatter) {
@@ -10,12 +9,7 @@ const Footer = ({ frontmatter }) => {
   }
 
   const {
-    copyright,
-    privacyHref,
-    privacyText,
-    termsHref,
-    termsText,
-    social: { facebook, github, linkedin, medium, twitter },
+    copyright
   } = frontmatter;
 
   return (

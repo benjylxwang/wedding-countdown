@@ -1,0 +1,23 @@
+---
+anchor: "信息"
+header: "信息"
+subheader: "一些有用的知识..."
+services: [
+  {
+    iconName: "LocationIcon",
+    header: "地点",
+    content: "Cara comes from the small town of Thurso in the Highlands of Scotland, and the wedding ceremony will be held right in the middle of Thurso at St Peter's and St Andrew's Church. Later in the day, the Meal, Speeches, and Ceilidh will happen in the Mey Hall, 20 minutes drive east of Thurso."
+  },
+  {
+    iconName: "TravelIcon",
+    header: "旅行",
+    content: "Have a look at Thurso on a map - it may be a long journey but it's worth it! If you're planning to drive, you just need to hit the A9 at Perth and follow it to the end. Trains come all the way up to Thurso Train Station, but if you're planning to fly the closest airport is Inverness. Remember to leave a few hours for the last leg from Inverness to Thurso." 
+  },
+  {
+    iconName: "AccomodationIcon",
+    header: "住宿",
+    content: "With the rise of the North Coast 500, Thurso and the surrounding areas have become popular destinations in summer. It's worth booking as far in advance as possible to ensure you get somewhere to stay. Don't limit yourself to Thurso, there will be more accomodation options available in the surrounding area."
+  }
+]
+contactSuggestText: "Please feel free to send us a message if you have any questions about logistics or anything else!"
+---

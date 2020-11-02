@@ -54,14 +54,10 @@ export const query = graphql`
           menuText
           portfolios {
             content
-            extraInfo
             header
             subheader
-            imageFileNameDetail
             imageFileName
           }
-          privacyHref
-          privacyText
           rsvpNameLabel
           rsvpEmailLabel
           rsvpInviteCodeLabel
@@ -78,29 +74,8 @@ export const query = graphql`
             iconName
             imageFileName
           }
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-          }
           subheader
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-            }
-            subheader
-          }
           telephone
-          termsHref
-          termsText
           title
           timeline {
             content

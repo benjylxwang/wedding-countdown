@@ -1,0 +1,15 @@
+---
+anchor: "赐复"
+header: "赐复"
+subheader: "请使用此表格进行回复。"
+rsvpDoneSubheader: "感谢您的回应！ 等不及要见你了！"
+rsvpAgainButtonLabel: "单击此处再次回复..."
+rsvpNameLabel: "您的名字"
+rsvpEmailLabel: "您的电子邮件地址"
+rsvpInviteCodeLabel: "邀请代码"
+rsvpConfirmButtonLabel: "赐复!"
+rsvpAddPeopleButtonLabel: "添加妻子/丈夫/孩子等"
+rsvpAddAdditionalPeopleLabel: "添加其他人"
+rsvpOtherPeopleNameLabel: "名字"
+removePersonButtonLabel: "清除"
+---

@@ -1,4 +1,4 @@
 ---
 brand: "Benjy&Cara"
-menuText: "Menu "
+menuText: "导航 "
 ---
