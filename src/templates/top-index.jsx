@@ -66,6 +66,12 @@ export const query = graphql`
           rsvpEmailLabel
           rsvpInviteCodeLabel
           rsvpConfirmButtonLabel
+          rsvpAddPeopleButtonLabel
+          rsvpAddAdditionalPeopleLabel
+          rsvpOtherPeopleNameLabel
+          removePersonButtonLabel
+          rsvpDoneSubheader
+          rsvpAgainButtonLabel
           services {
             content
             header

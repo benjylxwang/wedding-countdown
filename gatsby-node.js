@@ -44,6 +44,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       rsvpEmailLabel: String
       rsvpInviteCodeLabel: String
       rsvpConfirmButtonLabel: String
+      rsvpAddPeopleButtonLabel: String
+      rsvpAddAdditionalPeopleLabel: String
+      rsvpOtherPeopleNameLabel: String
+      removePersonButtonLabel: String
+      rsvpDoneSubheader: String
+      rsvpAgainButtonLabel: String
       msText: String
       social: Social
       services: [Service]

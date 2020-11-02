@@ -17,14 +17,14 @@
     padding: 0;
   }
   .intro-text {
-    padding-top: 80px;
+    padding-top: 200px;
     padding-bottom: 20px;
     .intro-lead-in {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
-      text-shadow: 2px 2px #000000;
+      text-shadow: 1px 1px #000000;
       @include serif-font;
     }
     .intro-heading {
@@ -43,21 +43,21 @@
 
 .countdown_number {
   float: left;
-  width: 33.33333333333%;
+  width: 20%;
 }
 
 #secs,
 #ms {
-  width: 50%;
+  width: 20%;
 }
 
 .countdown_number p.number {
-  font-size: 7vh;
-  text-shadow: 2px 2px #000000;
+  font-size: 10vw;
+  text-shadow: 1px 1px #000000;
 }
 
 .countdown_number p {
-  font-size: 2vw;
+  font-size: 3vw;
   text-shadow: 1px 1px #000000;
 }
 
@@ -78,6 +78,7 @@
         line-height: 40px;
         margin-top: 25px;
         margin-bottom: 0;
+        text-shadow: 2px 2px #000000;
         @include serif-font;
       }
       .intro-heading {
@@ -102,6 +103,12 @@
 
   .countdown_number p.number {
     font-size: 6vw;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .countdown_number p {
+    font-size: 2vw;
+    text-shadow: 1px 1px #000000;
   }
 
   #secs,
