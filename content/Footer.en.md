@@ -1,5 +1,5 @@
 ---
-copyright: "Copyright © Benjy and Cara 2020"
+copyright: "Copyright © Benjy&Cara 2020"
 social: {
   twitter: "#",
   facebook: "#",

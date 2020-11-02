@@ -39,6 +39,7 @@ export const query = graphql`
             imageFileName
           }
           content
+          contactSuggestText
           copyright
           header
           email
@@ -61,6 +62,10 @@ export const query = graphql`
           }
           privacyHref
           privacyText
+          rsvpNameLabel
+          rsvpEmailLabel
+          rsvpInviteCodeLabel
+          rsvpConfirmButtonLabel
           services {
             content
             header
@@ -149,7 +154,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
           ) : null;
         })
       }
-      {/* <Footer frontmatter={footerNode.frontmatter} /> */}
+      <Footer frontmatter={footerNode.frontmatter} />
     </>
   );
 };

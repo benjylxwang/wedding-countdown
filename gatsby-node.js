@@ -35,10 +35,15 @@ exports.createSchemaCustomization = ({ actions }) => {
       anchor: String
       jumpToAnchor: String
       jumpToAnchorText: String
+      contactSuggestText: String
       daysText: String
       hoursText: String
       minutesText: String
       secondsText: String
+      rsvpNameLabel: String
+      rsvpEmailLabel: String
+      rsvpInviteCodeLabel: String
+      rsvpConfirmButtonLabel: String
       msText: String
       social: Social
       services: [Service]

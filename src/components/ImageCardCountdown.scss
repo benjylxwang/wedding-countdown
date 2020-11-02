@@ -5,7 +5,6 @@
   .image {
     height: 491px;
     width: 100%;
-    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
     margin-left: auto;
     margin-right: auto;
 
@@ -52,13 +51,13 @@
   width: 50%;
 }
 
-.countdown_number number {
+.countdown_number p.number {
   font-size: 7vh;
   text-shadow: 2px 2px #000000;
 }
 
 .countdown_number p {
-  font-size: 3vh;
+  font-size: 2vw;
   text-shadow: 1px 1px #000000;
 }
 
@@ -91,12 +90,17 @@
     }
   }
 
+  .RSVPButton {
+    margin-top: 50px;
+    width: 150px;
+  }
+
   .countdown_number {
     float: left;
     width: 20%;
   }
 
-  .countdown_number number {
+  .countdown_number p.number {
     font-size: 6vw;
   }
 

@@ -6,13 +6,14 @@ import { Row, Col } from "react-bootstrap";
 import ServiceItem from "components/ServiceItem";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
+import InfoComment from "components/InfoComment";
 
 const Services = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { anchor, header: rootHeader, subheader: rootSubHeader, services } = frontmatter;
+  const { anchor, header: rootHeader, subheader: rootSubHeader, services, contactSuggestText } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -25,6 +26,10 @@ const Services = ({ className, frontmatter }) => {
             <ServiceItem {...service} />
           </Col>
         ))}
+      </Row>
+      <hr className="divider my-4" />
+      <Row>
+        <InfoComment comment={contactSuggestText}/>
       </Row>
     </PageSection>
   );

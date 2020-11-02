@@ -50,7 +50,7 @@ const Top = ({ frontmatter }) => {
     let extraInfoPart;
     if (jumpToAnchor && jumpToAnchorText) {
       extraInfoPart = (
-        <Button size="xl" variant="primary" className="text-uppercase" onClick={scrollToSection}>
+        <Button size="lg" variant="outline-secondary" className="RSVPButton text-uppercase" onClick={scrollToSection}>
           {jumpToAnchorText}
         </Button>
       );
@@ -59,26 +59,26 @@ const Top = ({ frontmatter }) => {
     const countdown = (
       <div id="countdown">
         <div id="days" className="countdown_number">
-          <number>{days}</number>
+          <p className="number">{days}</p>
           <p>{daysText}</p>
         </div>
         <div id="hrs" className="countdown_number">
-          <number>{hrs}</number>
+          <p className="number">{hrs}</p>
           <p>{hoursText}</p>
 
         </div>
         <div id="mins" className="countdown_number">
-          <number>{mins}</number>
+          <p className="number">{mins}</p>
           <p>{minutesText}</p>
 
         </div>
         <div id="secs" className="countdown_number">
-          <number>{secs}</number>
+          <p className="number">{secs}</p>
           <p>{secondsText}</p>
 
         </div>
         <div id="ms" className="countdown_number">
-          <number>{ms}</number>
+          <p className="number">{ms}</p>
           <p>{msText}</p>
         </div>
       </div>

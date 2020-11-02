@@ -15,6 +15,7 @@ const ImageCardCountdown = ({ className, imageFileName, imageAlt, countdown, sub
           <div className="intro-text">
             <div className="intro-lead-in">{subheader}</div>
             {countdown}
+            {extraInfo}
           </div>
         </Container>
       </Card.ImgOverlay>
