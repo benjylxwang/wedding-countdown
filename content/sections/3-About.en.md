@@ -6,26 +6,22 @@ timeline: [
   {
     imageFileName: "about/1.jpg",
     header: "21st April 2019",
-    subheader: "Our Humble Beginnings",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    subheader: "Our Humble Beginnings"
   },
   {
     imageFileName: "about/2.jpg",
     header: "March 2011",
-    subheader: "An Agency is Born",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    subheader: "An Agency is Born"
   },
   {
     imageFileName: "about/3.jpg",
     header: "December 2012",
-    subheader: "Transition to Full Service",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    subheader: "Transition to Full Service"
   },
   {
     imageFileName: "about/4.jpg",
     header: "July 2014",
-    subheader: "Phase Two Expansion",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    subheader: "Phase Two Expansion"
   },
   {
     imageContent: "Be Part\r\nOf Our\r\nStory!"

@@ -10,7 +10,7 @@ portfolios: [
     content: "Join us in the early afternoon for the church service where we will be officially married!"
   },
   {
-    imageFileName: "portfolio/02-thumbnail.jpg",
+    imageFileName: "portfolio/meal.jpg",
     header: "Meal",
     subheader: "3rd July 2021",
     content: "Family and friends from afar are invited to join us for an early dinner, menu coming soon!"

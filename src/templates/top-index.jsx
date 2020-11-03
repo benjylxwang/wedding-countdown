@@ -78,7 +78,6 @@ export const query = graphql`
           telephone
           title
           timeline {
-            content
             header
             imageContent
             imageFileName

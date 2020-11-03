@@ -13,7 +13,6 @@ const TimelineItem = ({
   imageContent,
   header,
   subheader,
-  content,
 }) => {
   const headerPart = header ? <h4>{header}</h4> : null;
   const subheaderPart = subheader ? <h4 className="subheading">{subheader}</h4> : null;
@@ -36,9 +35,6 @@ const TimelineItem = ({
           {headerPart}
           {subheaderPart}
         </div>
-        <div className="timeline-body">
-          <p className="text-muted">{content}</p>
-        </div>
       </div>
     </li>
   );
@@ -51,7 +47,6 @@ TimelineItem.propTypes = {
   imageContent: PropTypes.any,
   header: PropTypes.string,
   subheader: PropTypes.string,
-  content: PropTypes.string,
 };
 
 TimelineItem.defaultProps = {
@@ -61,7 +56,6 @@ TimelineItem.defaultProps = {
   imageContent: null,
   header: "",
   subheader: "",
-  content: "",
 };
 
 export default TimelineItem;
