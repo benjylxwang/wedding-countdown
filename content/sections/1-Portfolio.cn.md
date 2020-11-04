@@ -10,13 +10,13 @@ portfolios: [
     content: "Join us in the early afternoon for the church service where we will be officially married!"
   },
   {
-    imageFileName: "portfolio/02-thumbnail.jpg",
+    imageFileName: "portfolio/meal.jpg",
     header: "婚宴",
     subheader: "2021年7月3日",
     content: "Family and friends from afar are invited to join us for an early dinner, menu coming soon!"
   },
   {
-    imageFileName: "portfolio/03-thumbnail.jpg",
+    imageFileName: "portfolio/dance.jpg",
     header: "演讲与跳舞",
     subheader: "2021年7月3日",
     content: "We'll start the evening with speeches from family, then get your kilts on for the ceilidh!"

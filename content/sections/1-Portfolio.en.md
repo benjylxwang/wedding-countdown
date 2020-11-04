@@ -16,7 +16,7 @@ portfolios: [
     content: "Family and friends from afar are invited to join us for an early dinner, menu coming soon!"
   },
   {
-    imageFileName: "portfolio/03-thumbnail.jpg",
+    imageFileName: "portfolio/dance.jpg",
     header: "Speeches & Ceilidh",
     subheader: "3rd July 2021",
     content: "We'll start the evening with speeches from family, then get your kilts on for the ceilidh!"

@@ -5,26 +5,48 @@ subheader: "A few memories from our time together"
 timeline: [
   {
     imageFileName: "about/1.jpg",
-    header: "21st April 2019",
-    subheader: "Our Humble Beginnings"
+    header: "April 2019",
+    subheader: ""
   },
   {
     imageFileName: "about/2.jpg",
-    header: "March 2011",
-    subheader: "An Agency is Born"
-  },
-  {
-    imageFileName: "about/3.jpg",
-    header: "December 2012",
-    subheader: "Transition to Full Service"
+    header: "July 2019",
+    subheader: ""
   },
   {
     imageFileName: "about/4.jpg",
-    header: "July 2014",
-    subheader: "Phase Two Expansion"
+    header: "August 2019",
+    subheader: ""
   },
   {
-    imageContent: "Be Part\r\nOf Our\r\nStory!"
-  }
+    imageFileName: "about/5.jpg",
+    header: "September 2019",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/6.jpg",
+    header: "January 2020",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/7.jpg",
+    header: "January 2020",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/9.jpg",
+    header: "July 2020",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/10.jpg",
+    header: "2nd August 2020",
+    subheader: "We got engaged!"
+  },
+  {
+    imageFileName: "about/11.jpg",
+    header: "",
+    subheader: ""
+  },
 ]
 ---
