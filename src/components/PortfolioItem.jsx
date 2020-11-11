@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 import { Col } from "react-bootstrap";
 import Image from "components/Image";
-import Icon from "components/Icon";
-import PortfolioDetailDialog from "components/PortfolioDetailDialog";
 
 import "./PortfolioItem.scss";
 
@@ -14,17 +12,7 @@ const PortfolioItem = ({
   header,
   subheader,
   content,
-  imageFileNameDetail,
-  imageAltDetail,
 }) => {
-  const [showDetail, setShowDetail] = React.useState(false);
-  const handleShowDetail = React.useCallback(() => {
-    setShowDetail(true);
-  }, []);
-  const handleHideDetail = React.useCallback(() => {
-    setShowDetail(false);
-  }, []);
-
   return (
     <>
       <Col md={4} sm={6} className="portfolio-item">
@@ -50,16 +38,12 @@ PortfolioItem.propTypes = {
   header: PropTypes.string.isRequired,
   subheader: PropTypes.string,
   content: PropTypes.string,
-  imageFileNameDetail: PropTypes.string,
-  imageAltDetail: PropTypes.string,
 };
 
 PortfolioItem.defaultProps = {
   imageAlt: "",
   subheader: "",
   content: "",
-  imageFileNameDetail: "",
-  imageAltDetail: "",
 };
 
 export default PortfolioItem;

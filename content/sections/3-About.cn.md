@@ -5,30 +5,48 @@ subheader: "我们在一起的一些回忆"
 timeline: [
   {
     imageFileName: "about/1.jpg",
-    header: "21st April 2019",
-    subheader: "Our Humble Beginnings",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "2019年4月",
+    subheader: ""
   },
   {
     imageFileName: "about/2.jpg",
-    header: "March 2011",
-    subheader: "An Agency is Born",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageFileName: "about/3.jpg",
-    header: "December 2012",
-    subheader: "Transition to Full Service",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "2019年7月",
+    subheader: ""
   },
   {
     imageFileName: "about/4.jpg",
-    header: "July 2014",
-    subheader: "Phase Two Expansion",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    header: "2019年8月",
+    subheader: ""
   },
   {
-    imageContent: "Be Part\r\nOf Our\r\nStory!"
-  }
+    imageFileName: "about/5.jpg",
+    header: "2019年9月",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/6.jpg",
+    header: "2020年1月 ",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/7.jpg",
+    header: "2020年1月",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/9.jpg",
+    header: "2020年7月",
+    subheader: ""
+  },
+  {
+    imageFileName: "about/10.jpg",
+    header: "2020年8月2日",
+    subheader: "我们订婚了!"
+  },
+  {
+    imageFileName: "about/11.jpg",
+    header: "",
+    subheader: ""
+  },
 ]
 ---

@@ -6,20 +6,20 @@ portfolios: [
   {
     imageFileName: "portfolio/ceremony.jpg",
     header: "婚礼",
-    subheader: "2021年7月3日",
-    content: "Join us in the early afternoon for the church service where we will be officially married!"
+    subheader: "2021年 7月 3日",
+    content: "午后跟我们参加教堂礼拜，我们将正式结婚！"
   },
   {
     imageFileName: "portfolio/meal.jpg",
     header: "婚宴",
-    subheader: "2021年7月3日",
-    content: "Family and friends from afar are invited to join us for an early dinner, menu coming soon!"
+    subheader: "2021年 7月 3日",
+    content: "欢迎家人和从远方来的朋友跟我们吃晚餐！"
   },
   {
     imageFileName: "portfolio/dance.jpg",
     header: "演讲与跳舞",
-    subheader: "2021年7月3日",
-    content: "We'll start the evening with speeches from family, then get your kilts on for the ceilidh!"
+    subheader: "2021年 7月 3日",
+    content: "晚上我们先听家人的演讲，然后一起跳苏格兰舞（Ceilidh）！"
   }
 ]
 ---

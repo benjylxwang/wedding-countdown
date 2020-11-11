@@ -25,7 +25,7 @@ timeline: [
   },
   {
     imageFileName: "about/6.jpg",
-    header: "January 2020",
+    header: "January 2020 ",
     subheader: ""
   },
   {

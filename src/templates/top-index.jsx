@@ -79,7 +79,6 @@ export const query = graphql`
           title
           timeline {
             header
-            imageContent
             imageFileName
             subheader
           }

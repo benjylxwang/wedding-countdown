@@ -11,6 +11,7 @@ module.exports = {
   author: "benjylxwang",
   defaultLang: "en",
   langTextMap: {
-    en: "English"
+    en: "English",
+    cn: "中文"
   },
 };

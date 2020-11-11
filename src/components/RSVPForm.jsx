@@ -50,7 +50,6 @@ const RSVPForm = ({
           "extras": additionalPeople.map((person) => person.name)
         });
 
-        console.log(formData);
         fetch('https://script.google.com/macros/s/AKfycbwX1k4Pu9ACp2_7JkD5ACKRvPX_vNCs1olpNd7aly3w8fxVMAI/exec', {
           method: 'POST',
           redirect: 'follow',
@@ -60,7 +59,6 @@ const RSVPForm = ({
           }
         })
             .then((data) => {
-                console.log(data);
                 if (data.result === "error") {
                     setAlertVariant("danger");
                     setAlertMessage(data.message);
@@ -70,9 +68,7 @@ const RSVPForm = ({
                     handleRSVPSuccess();
                 }
             })
-            .catch((data) => {
-                console.log("Hello");
-                console.log(data);
+            .catch(() => {
                 setAlertVariant("danger");
                 setAlertMessage("Sorry! There is some issue with the server.");
                 setAlertVisible(true);

@@ -42,7 +42,7 @@ const Top = ({ frontmatter }) => {
       return null;
     }
   
-    const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText, 
+    const { subheader, imageFileName, jumpToAnchor, jumpToAnchorText, 
       daysText, hoursText, minutesText, secondsText, msText } = frontmatter;
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const scrollToSection = useSmoothScrollTo(jumpToAnchor);
