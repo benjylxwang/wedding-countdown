@@ -68,6 +68,9 @@ export const query = graphql`
           removePersonButtonLabel
           rsvpDoneSubheader
           rsvpAgainButtonLabel
+          savingDetailsAlert
+          inviteCodeErrorAlert
+          serverIssueAlert
           services {
             content
             header

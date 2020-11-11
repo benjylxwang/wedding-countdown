@@ -12,4 +12,7 @@ rsvpAddPeopleButtonLabel: "Add Wife/Husband/Kids etc"
 rsvpAddAdditionalPeopleLabel: "Add another person"
 rsvpOtherPeopleNameLabel: "Name"
 removePersonButtonLabel: "Remove"
+savingDetailsAlert: "Just a sec! We are saving your details."
+inviteCodeErrorAlert: "Sorry! Your invite code is incorrect."
+serverIssueAlert: "Sorry! There is some issue with the server."
 ---

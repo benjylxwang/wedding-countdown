@@ -12,4 +12,7 @@ rsvpAddPeopleButtonLabel: "添加妻子/丈夫/孩子等"
 rsvpAddAdditionalPeopleLabel: "添加其他人"
 rsvpOtherPeopleNameLabel: "名字"
 removePersonButtonLabel: "清除"
+savingDetailsAlert: "等一下... 我们正在保存您的详细信息。"
+inviteCodeErrorAlert: "抱歉! 您的邀请码不正确。"
+serverIssueAlert: "抱歉! 服务器出现问题。"
 ---

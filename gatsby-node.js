@@ -50,6 +50,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       removePersonButtonLabel: String
       rsvpDoneSubheader: String
       rsvpAgainButtonLabel: String
+      savingDetailsAlert: String
+      inviteCodeErrorAlert: String
+      serverIssueAlert: String
       msText: String
       social: Social
       services: [Service]
