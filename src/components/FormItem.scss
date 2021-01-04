@@ -1,0 +1,54 @@
+.image-card .container.rsvp-form {
+  background-color: rgba(black, 0.7);
+}
+
+.rsvp-form {
+  margin-top: 50px;
+  height: 440px;
+  padding: 20px;
+  position: relative;
+}
+
+.rsvp-form .row {
+  padding: 0 20px;
+}
+
+.rsvp-form .title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+
+.continue-button {
+  float: right;
+}
+.cancel-button {
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .rsvp-form {
+    margin-top: 15vh;
+    height: 80vh;
+    padding: 20px;
+  }
+  .image-card .container.rsvp-form {
+    background-color: rgba(black, 0.6);
+  }
+
+  .rsvp-form .row {
+    padding: 0 20px;
+  }
+
+  .rsvp-form .title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,5 +1,5 @@
 ---
-anchor: "Photo Timeline"
+anchor: "Photos"
 header: "Photo Timeline"
 subheader: "A few memories from our time together"
 timeline: [

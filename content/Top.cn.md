@@ -1,6 +1,6 @@
 ---
 header: "It's Nice To Meet You"
-subheader: "我们2021年7月3日要结婚了..."
+subheader: "我们 2021年 7月 3日要结婚了..."
 imageFileName: "header-bg-cropped.png"
 jumpToAnchor: "赐复"
 jumpToAnchorText: "赐复"

@@ -36,6 +36,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       jumpToAnchor: String
       jumpToAnchorText: String
       contactSuggestText: String
+      details: [String]
       daysText: String
       hoursText: String
       minutesText: String
@@ -86,6 +87,7 @@ exports.createSchemaCustomization = ({ actions }) => {
  */
 exports.createPages = ({ graphql, actions: { createPage } }) => {
   const topIndex = path.resolve("./src/templates/top-index.jsx");
+  const rsvpTemplate = path.resolve("./src/templates/rsvp-template.jsx");
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -107,6 +109,16 @@ exports.createPages = ({ graphql, actions: { createPage } }) => {
           createPage({
             path: getBaseUrl(defaultLang, langKey),
             component: topIndex,
+            context: {
+              langKey,
+              defaultLang,
+              langTextMap,
+            },
+          });
+
+          createPage({
+            path: getBaseUrl(defaultLang, langKey) + "rsvp",
+            component: rsvpTemplate,
             context: {
               langKey,
               defaultLang,

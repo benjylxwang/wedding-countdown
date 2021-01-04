@@ -1,0 +1,25 @@
+// Styling for the navbar
+.navbar-alt-root {
+  background-color: $navbar-col;
+  .navbar-brand {
+    color: $primary;
+    @include script-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+}
+@media (min-width: 992px) {
+  .navbar-alt-root {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: $navbar-col;
+  }
+}

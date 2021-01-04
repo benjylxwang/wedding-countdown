@@ -44,17 +44,6 @@ const Top = ({ frontmatter }) => {
 
   const { subheader, imageFileName, jumpToAnchor, jumpToAnchorText,
     daysText, hoursText, minutesText, secondsText, msText } = frontmatter;
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const scrollToSection = useSmoothScrollTo(jumpToAnchor);
-
-  let extraInfoPart;
-  if (jumpToAnchor && jumpToAnchorText) {
-    extraInfoPart = (
-      <Button size="lg" variant="outline-secondary" className="RSVPButton text-uppercase" onClick={scrollToSection}>
-        {jumpToAnchorText}
-      </Button>
-    );
-  }
 
   const countdown = (
     <div id="countdown">
@@ -84,14 +73,15 @@ const Top = ({ frontmatter }) => {
     </div>
   )
 
-  return (
-    <ImageCardCountdown
-      imageFileName={imageFileName}
-      countdown={countdown}
-      subheader={subheader}
-      extraInfo={extraInfoPart}
-    />
-  );
+  const imageCountdown = 
+  <ImageCardCountdown
+    imageFileName={imageFileName}
+    countdown={countdown}
+    subheader={subheader}
+    jumpToAnchorText={jumpToAnchorText}
+  />;
+
+  return (imageCountdown);
 }
 
 Top.propTypes = {

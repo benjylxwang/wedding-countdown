@@ -2,9 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
-import Navbar from "views/Navbar";
-import Top from "views/Top";
-import Footer from "views/Footer";
+import NavbarAlt from "views/NavbarAlt";
 import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import LanguageSelector from "components/LanguageSelector";
@@ -13,13 +11,14 @@ import "utils/fixFontAwesome";
 import breakDownAllNodes from "utils/breakDownAllNodes";
 import fileNameToSectionName from "utils/fileNameToSectionName";
 
-import "../style/main.scss";
+import "../style/rsvp.scss";  
 
 /**
  * get file name list from content/sections folder
  */ 
+
 export const query = graphql`
-  query IndexQuery($langKey: String!) {
+  query RSVPQuery($langKey: String!) {
     site {
       siteMetadata {
         keywords
@@ -106,15 +105,16 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) => {
+const RSVPPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) => {
   const {
     site: {
       siteMetadata: { keywords, description },
     },
     allMarkdownRemark: { nodes },
   } = data;
+  console.log(Sections);
 
-  const { topNode, navBarNode, anchors, footerNode, sectionsNodes } = breakDownAllNodes(nodes);
+  const { navBarNode } = breakDownAllNodes(nodes);
 
   let langSelectorPart;
   if (langTextMap != null && Object.keys(langTextMap).length > 1) {
@@ -126,39 +126,20 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
   return (
     <>
       <SEO lang={langKey} title="Time to Get Married" keywords={keywords} description={description} />
-      <Navbar
-        anchors={anchors}
+      <NavbarAlt
         frontmatter={navBarNode.frontmatter}
         extraItems={langSelectorPart}
       />
-      <Top frontmatter={topNode.frontmatter} />
-      {
-        // dynamically import sections
-        sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
-          const sectionComponentName = fileNameToSectionName(fileName);
-          const SectionComponent = Sections[sectionComponentName];
-          console.log(sectionComponentName);
-
-          return SectionComponent ? (
-            <SectionComponent
-              key={sectionComponentName}
-              className={ind % 2 === 1 ? "bg-light" : null}
-              frontmatter={frontmatter}
-            />
-          ) : null;
-        })
-      }
-      <Footer frontmatter={footerNode.frontmatter} />
     </>
   );
 };
 
-IndexPage.propTypes = {
+RSVPPage.propTypes = {
   data: PropTypes.object.isRequired,
   pathContext: PropTypes.object,
 };
 
-IndexPage.defaultProps = {
+RSVPPage.defaultProps = {
   pathContext: {
     langKey: "en",
     defaultLang: "en",
@@ -166,4 +147,4 @@ IndexPage.defaultProps = {
   },
 };
 
-export default IndexPage;
+export default RSVPPage;
