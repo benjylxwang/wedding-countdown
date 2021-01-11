@@ -1,0 +1,17 @@
+.thanks_for_responding {
+  min-width: 300px;
+  width: 50%;
+
+  margin: auto;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.thanks_for_responding h2 {
+  @include script-font;
+  margin-bottom: 20px;
+  font-weight: normal;
+}

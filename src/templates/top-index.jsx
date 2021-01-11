@@ -137,7 +137,6 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
         sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
           const sectionComponentName = fileNameToSectionName(fileName);
           const SectionComponent = Sections[sectionComponentName];
-          console.log(sectionComponentName);
 
           return SectionComponent ? (
             <SectionComponent

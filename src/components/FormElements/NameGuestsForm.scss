@@ -1,0 +1,18 @@
+.name_guests_form {
+  min-width: 300px;
+  width: 50%;
+
+  margin: auto;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+
+  text-align: left;
+}
+
+.name_guests_form .next {
+  position: absolute;
+  right: -5px;
+}

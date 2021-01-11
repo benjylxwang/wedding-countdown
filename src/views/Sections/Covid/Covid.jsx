@@ -14,7 +14,6 @@ const Covid = ({ className, frontmatter }) => {
   }
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, details, links} = frontmatter;
-  console.log(links);
 
   return (
     <PageSection className={clsx("covid-section", className)} id={anchor}>

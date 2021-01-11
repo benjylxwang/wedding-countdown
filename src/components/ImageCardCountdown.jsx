@@ -7,13 +7,17 @@ import Image from "components/Image";
 
 import FormItem from "components/FormItem";
 import "./ImageCardCountdown.scss";
+import PartyLeaderForm from "./FormElements/PartyLeaderForm";
+import NameGuestsForm from "./FormElements/NameGuestsForm";
+import AcceptDeclineForm from "./FormElements/AcceptDeclineForm";
+import MealForm from "./FormElements/MealForm";
+import ThanksForResponding from "./FormElements/ThanksForResponding";
 
 const ImageCardCountdown = ({ className, imageFileName, imageAlt, countdown, subheader, jumpToAnchorText }) => {
   const [index, setIndex] = useState(0);
+  const [responded, setResponded] = useState(false);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+  const [input, setInput] = useState([]);
 
   const startRSVP = () => {
     setIndex(1);
@@ -22,6 +26,26 @@ const ImageCardCountdown = ({ className, imageFileName, imageAlt, countdown, sub
   const cancelRSVP = () => {
     setIndex(0);
   };
+
+  const nextPage = (data) => {
+    setIndex(index + 1);
+    setInput([data, ...input]);
+  }
+
+  const goBack = () => {
+    setIndex(index - 1);
+    input.shift()
+    setInput(input);
+  }
+
+  const toHome = (data) => {
+    setIndex(0);
+    setResponded(true);
+  }
+
+  const thanksForResponding = (
+    <h3>Thanks for responding!</h3>
+  )
 
   let button;
   if (jumpToAnchorText) {
@@ -38,16 +62,28 @@ const ImageCardCountdown = ({ className, imageFileName, imageAlt, countdown, sub
       <Card.ImgOverlay className="no-padding">
         <Carousel activeIndex={index} onSelect="" controls={false} indicators={false} nextLabel={null} >
           <Carousel.Item>
-            <Container>
+            <Container className="faded_black">
               <div className="intro-text">
                 <div className="intro-lead-in">{subheader}</div>
                 {countdown}
-                {button}
+                {responded ? thanksForResponding : button}
               </div>
             </Container>
           </Carousel.Item>
           <Carousel.Item>
-            <FormItem title="RSVP Form" cancelRSVP={cancelRSVP}/>
+            <FormItem  form={<PartyLeaderForm callback={nextPage}/>}cancelRSVP={cancelRSVP} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FormItem  form={<NameGuestsForm input={input[0]} goBack={goBack} callback={nextPage} />} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FormItem  form={<AcceptDeclineForm input={input[0]}  goBack={goBack} callback={nextPage} />} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FormItem  form={<MealForm input={input[0]}  goBack={goBack} callback={nextPage} />} />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FormItem  form={<ThanksForResponding input={input[0]}  goBack={goBack} callback={toHome} />} />
           </Carousel.Item>
         </Carousel>
       </Card.ImgOverlay>

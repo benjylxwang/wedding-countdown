@@ -1,4 +1,5 @@
 {
+  "globals": { "_": true },
   "parser": "babel-eslint",
   "extends": ["airbnb", "plugin:react/recommended", "prettier", "prettier/react"],
   "plugins": ["react-hooks"],
