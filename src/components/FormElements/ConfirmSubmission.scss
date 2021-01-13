@@ -1,0 +1,27 @@
+.confirm_submission.container {
+  min-width: 350px;
+  width: 50%;
+
+  margin: auto;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+}
+
+.confirm_submission .btn {
+  margin: 20px;
+}
+
+.confirm_submission .submit {
+  position: absolute;
+  right: 20px;
+}
+
+.confirm_submission h2 {
+  @include script-font;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
