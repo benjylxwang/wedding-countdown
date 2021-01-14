@@ -1,3 +1,10 @@
+# Wedding Website for my wedding!
+
+This is a simple gatsby website for RSVP and display of information.
+
+Below is the original readme for the gatsby page this is based on.
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />

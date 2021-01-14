@@ -1,0 +1,32 @@
+.response_summary.container {
+  min-width: 350px;
+  width: 50%;
+
+  margin: auto;
+  position: absolute;
+  top: 49%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+}
+
+.response_summary .btn {
+  margin: 20px;
+}
+
+.response_summary .submit {
+  position: absolute;
+  right: 20px;
+}
+
+.response_summary h2 {
+  @include script-font;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.response_summary .info {
+  margin-top: 20px;
+  font-style: italic;
+}

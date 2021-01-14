@@ -13,6 +13,7 @@ import AcceptDeclineForm from "./FormElements/AcceptDeclineForm";
 import MealForm from "./FormElements/MealForm";
 import ThanksForResponding from "./FormElements/ThanksForResponding";
 import ConfirmSubmission from "./FormElements/ConfirmSubmission";
+import ResponseSummary from "./FormElements/ResponseSummary";
 
 const ImageCardCountdown = ({
   className,
@@ -29,10 +30,16 @@ const ImageCardCountdown = ({
 
   const startRSVP = () => {
     setIndex(1);
+    setInput([]);
   };
 
   const cancelRSVP = () => {
     setIndex(0);
+  };
+
+  const goToSummary = (data) => {
+    setIndex(7);
+    setInput([data, ...input]);
   };
 
   const nextPage = (data, toSkip = 0) => {
@@ -46,9 +53,9 @@ const ImageCardCountdown = ({
     setInput(input);
   };
 
-  const toHome = (data) => {
+  const toHome = (hasResponded = true) => {
     setIndex(0);
-    setResponded(true);
+    setResponded(hasResponded);
   };
 
   const thanksForResponding = <h3>Thanks for responding!</h3>;
@@ -91,7 +98,15 @@ const ImageCardCountdown = ({
             </Container>
           </Carousel.Item>
           <Carousel.Item>
-            <FormItem form={<PartyLeaderForm callback={nextPage} />} cancelRSVP={cancelRSVP} />
+            <FormItem
+              form={
+                <PartyLeaderForm
+                  callback={nextPage}
+                  cancelRSVP={cancelRSVP}
+                  alreadyRSVPdCallback={goToSummary}
+                />
+              }
+            />
           </Carousel.Item>
           <Carousel.Item>
             <FormItem
@@ -114,6 +129,11 @@ const ImageCardCountdown = ({
           <Carousel.Item>
             <FormItem
               form={<ThanksForResponding input={input[0]} goBack={goBack} callback={toHome} />}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <FormItem
+              form={<ResponseSummary input={input[0]} goBack={startRSVP} callback={toHome} />}
             />
           </Carousel.Item>
         </Carousel>

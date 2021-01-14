@@ -61,7 +61,7 @@ const ConfirmSubmission = ({ input, callback, goBack }) => {
           </Row>
         ))}
         <Row>
-          <Button variant="secondary" onClick={() => goBack()}>
+          <Button variant="secondary" disabled={isLoading} onClick={() => goBack()}>
             Go Back!
           </Button>
           <Button variant="primary" disabled={isLoading} className="submit" onClick={submit}>
