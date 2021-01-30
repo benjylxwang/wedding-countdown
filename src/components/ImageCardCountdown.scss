@@ -1,9 +1,9 @@
 .image-card {
-  height: 491px;
+  height: calc(100vh);
   background-color: grey;
 
   .image {
-    height: 491px;
+    height: calc(100vh);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
   }
 
   .intro-text {
-    margin-top: 220px;
+    margin-top: 50vh;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;

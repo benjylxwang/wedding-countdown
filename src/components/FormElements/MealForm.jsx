@@ -10,6 +10,7 @@ const MealForm = ({ input, callback, goBack }) => {
   const [starter, setStarter] = useState("");
   const [main, setMain] = useState("");
   const [dessert, setDessert] = useState("");
+  const [drink, setDrink] = useState(false);
 
   const [index, setIndex] = useState(0);
   const [output, setOutput] = useState({});
@@ -42,6 +43,7 @@ const MealForm = ({ input, callback, goBack }) => {
           starter,
           main,
           dessert,
+          drink,
         },
       },
     ];
@@ -129,6 +131,21 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option>Kentucky Friend Chicken</option>
                     <option>Something tasty</option>
                     <option>A big stick</option>
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Drink</Form.Label>
+                  <Form.Control
+                    as="select"
+                    custom
+                    required
+                    onChange={(e) => setDrink(e.target.value)}
+                  >
+                    <option value="" selected disabled>
+                      Please select
+                    </option>
+                    <option>Alcoholic</option>
+                    <option>Non-Alcoholic</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Row>

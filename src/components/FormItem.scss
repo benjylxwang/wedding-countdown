@@ -4,7 +4,7 @@
 
 .rsvp-form {
   margin-top: 50px;
-  height: 440px;
+  height: calc(100vh - 50px);
   padding: 20px;
   position: relative;
 }

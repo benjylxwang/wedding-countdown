@@ -57,7 +57,7 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
         } else if (received.result === "repeat") {
           // Already RSVPd!
           console.log(received.message);
-          console.log(received.response);
+          console.log(received);
           setErrorMsg("");
           setWrongName("");
           alreadyRSVPdCallback(received.response);
