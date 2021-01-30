@@ -7,3 +7,4 @@ export { default as Clients } from "./Clients";
 export { default as RSVP } from "./RSVP";
 export { default as Covid } from "./Covid";
 export { default as ThingsToDo } from "./ThingsToDo";
+export { default as Registry } from "./Registry";

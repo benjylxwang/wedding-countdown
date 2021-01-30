@@ -1,0 +1,17 @@
+.registry-section a {
+  color: $black;
+}
+
+.registry-section a.bg-light:hover,
+.registry-section a.bg-light:focus {
+  color: $black;
+  background-color: #f8f9fa !important;
+}
+
+.registry-section .container {
+  max-width: 800px;
+}
+
+.registry-section .container h3 {
+  margin-bottom: 0;
+}

@@ -17,7 +17,7 @@ import "../style/main.scss";
 
 /**
  * get file name list from content/sections folder
- */ 
+ */
 export const query = graphql`
   query IndexQuery($langKey: String!) {
     site {
@@ -62,6 +62,7 @@ export const query = graphql`
           minutesText
           secondsText
           msText
+          link
           menuText
           portfolios {
             content
@@ -125,7 +126,12 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Time to Get Married" keywords={keywords} description={description} />
+      <SEO
+        lang={langKey}
+        title="Time to Get Married"
+        keywords={keywords}
+        description={description}
+      />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}
