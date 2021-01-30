@@ -74,7 +74,7 @@ const AcceptDeclineForm = ({ input, callback, goBack }) => {
     // Call callback function with data response
     console.log(data);
 
-    if (acceptCount === 0) {
+    if (acceptCount === 0 || !input.food) {
       callback(data, 1);
     } else {
       callback(data);

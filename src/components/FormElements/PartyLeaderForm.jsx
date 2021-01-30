@@ -64,6 +64,7 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
         } else if (received["party-data"].length === 1) {
           // No extra people
           data.guests = [];
+          data.food = received.food;
           console.log(data);
           callback(data, 1);
           setErrorMsg("");
@@ -71,6 +72,7 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
         } else {
           // Has extra people
           data.party = received["party-data"];
+          data.food = received.food;
           // Remove leader from party list
           data.party.splice(data.party.indexOf(data.leader), 1);
           console.log(data);
