@@ -10,7 +10,7 @@ const ThanksForResponding = ({ input, callback }) => {
   return (
     <Container className="thanks_for_responding">
       <h2>Thanks for responding!</h2>
-      <p>Here&apos;s a link to our wedding registry if you&apos;d like to check it out!</p>
+      <p>Here&apos;s a link to our gift registry if you&apos;d like to check it out!</p>
       <Button
         variant="primary"
         href="https://www.google.com"

@@ -101,6 +101,7 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option>Garlic Bread</option>
                     <option>Purple Soup</option>
                     <option>Chicken</option>
+                    <option>N/A due to dietary requirements</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -117,6 +118,7 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option>Yum yum</option>
                     <option>Delicious Pie</option>
                     <option>Orange Apple</option>
+                    <option>N/A due to dietary requirements</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -133,6 +135,7 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option>Kentucky Friend Chicken</option>
                     <option>Something tasty</option>
                     <option>A big stick</option>
+                    <option>N/A due to dietary requirements</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -156,7 +159,7 @@ const MealForm = ({ input, callback, goBack }) => {
                     type="input"
                     value={additionalInfo}
                     onChange={(e) => setAdditionalInfo(e.target.value)}
-                    placeholder="E.g. Glucose intolerent, lactose intolerant, vegan"
+                    placeholder="E.g. Gluton intolerent, lactose intolerant, vegan"
                   />
                 </Form.Group>
                 <Form.Row>

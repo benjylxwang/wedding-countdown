@@ -106,10 +106,10 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
         ) : null}
       </Form.Group>
       <Form.Group>
-        <Form.Label>Enter your invite code:</Form.Label>
+        <Form.Label>Enter your RSVP code:</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Invite code"
+          placeholder="RSVP code"
           required
           onChange={(e) => setCode(e.target.value)}
         />
