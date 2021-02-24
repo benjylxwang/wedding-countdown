@@ -107,8 +107,12 @@
   }
 
   .RSVPButton {
-    margin-top: 50px;
-    width: 150px;
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .RSVPButton.text-uppercase.btn.btn-outline-secondary.btn-lg {
+    font-size: 4vh;
   }
 
   .countdown_number {
@@ -117,12 +121,12 @@
   }
 
   .countdown_number p.number {
-    font-size: 6vw;
+    font-size: calc(min(10vh, 6vw));
     text-shadow: 2px 2px #000000;
   }
 
   .countdown_number p {
-    font-size: 2vw;
+    font-size: calc(min(3vh, 2vw));
     text-shadow: 1px 1px #000000;
   }
 

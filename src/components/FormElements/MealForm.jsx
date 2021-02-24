@@ -11,6 +11,7 @@ const MealForm = ({ input, callback, goBack }) => {
   const [main, setMain] = useState("");
   const [dessert, setDessert] = useState("");
   const [drink, setDrink] = useState(false);
+  const [additionalInfo, setAdditionalInfo] = useState("");
 
   const [index, setIndex] = useState(0);
   const [output, setOutput] = useState({});
@@ -44,6 +45,7 @@ const MealForm = ({ input, callback, goBack }) => {
           main,
           dessert,
           drink,
+          additionalInfo,
         },
       },
     ];
@@ -147,6 +149,15 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option>Alcoholic</option>
                     <option>Non-Alcoholic</option>
                   </Form.Control>
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label>Other Requirements</Form.Label>
+                  <Form.Control
+                    type="input"
+                    value={additionalInfo}
+                    onChange={(e) => setAdditionalInfo(e.target.value)}
+                    placeholder="E.g. Glucose intolerent, lactose intolerant, vegan"
+                  />
                 </Form.Group>
                 <Form.Row>
                   <Button className="back" variant="secondary" onClick={handleGoBack}>
