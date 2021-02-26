@@ -8,16 +8,17 @@ const Footer = ({ frontmatter }) => {
     return null;
   }
 
-  const {
-    copyright
-  } = frontmatter;
+  const { copyright } = frontmatter;
 
   return (
     <footer className="footer py-3">
       <Container>
         <Row className="align-items-center text-center">
-          <Col lg={5} className="text-lg-left">
+          <Col lg={6} className="text-lg-left">
             {copyright}
+          </Col>
+          <Col lg={6} className="text-lg-right">
+            Site built by Benjamin Wang
           </Col>
         </Row>
       </Container>

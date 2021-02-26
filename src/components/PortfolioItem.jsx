@@ -6,13 +6,7 @@ import Image from "components/Image";
 
 import "./PortfolioItem.scss";
 
-const PortfolioItem = ({
-  imageFileName,
-  imageAlt,
-  header,
-  subheader,
-  content,
-}) => {
+const PortfolioItem = ({ imageFileName, imageAlt, header, subheader, content }) => {
   return (
     <>
       <Col md={4} sm={6} className="portfolio-item">
@@ -24,7 +18,7 @@ const PortfolioItem = ({
         <div className="portfolio-caption">
           <h4>{header}</h4>
           {subheader ? <p className="text-muted">{subheader}</p> : null}
-          <hr/>
+          <hr />
           {content ? <p className="text-content">{content}</p> : null}
         </div>
       </Col>

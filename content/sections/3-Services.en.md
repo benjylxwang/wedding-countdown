@@ -17,6 +17,11 @@ services: [
     iconName: "AccomodationIcon",
     header: "Accomodation",
     content: "With the rise of the North Coast 500, Thurso and the surrounding areas have become popular destinations in summer. It's worth booking as far in advance as possible to ensure you get somewhere to stay. Don't limit yourself to Thurso, there will be more accomodation options available in the surrounding area."
+  },
+  {
+    iconName: "CarIcon",
+    header: "Parking",
+    content: "Parking information...."
   }
 ]
 contactSuggestText: "Please feel free to send us a message if you have any questions about logistics or anything else!"

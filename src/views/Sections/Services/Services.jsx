@@ -13,7 +13,13 @@ const Services = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header: rootHeader, subheader: rootSubHeader, services, contactSuggestText } = frontmatter;
+  const {
+    anchor,
+    header: rootHeader,
+    subheader: rootSubHeader,
+    services,
+    contactSuggestText,
+  } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -22,14 +28,14 @@ const Services = ({ className, frontmatter }) => {
       </Row>
       <Row className="text-center">
         {services.map((service) => (
-          <Col md={4} key={service.header}>
+          <Col md={6} key={service.header}>
             <ServiceItem {...service} />
           </Col>
         ))}
       </Row>
       <hr className="divider my-4" />
       <Row>
-        <InfoComment comment={contactSuggestText}/>
+        <InfoComment comment={contactSuggestText} />
       </Row>
     </PageSection>
   );

@@ -51,6 +51,7 @@ export const query = graphql`
             url
             address
             description
+            imageFileName
           }
           header
           email

@@ -1,7 +1,6 @@
 // Styling for the services section
 .todo-item-div {
   background-color: white;
-  padding: 5px 20px;
 }
 
 .todo-item {
@@ -9,6 +8,11 @@
   margin-left: auto;
   margin-right: auto;
   color: black;
+}
+
+.todo-item-body {
+  margin-top: 5px;
+  padding: 5px 20px;
 }
 
 .todo-item-heading {
