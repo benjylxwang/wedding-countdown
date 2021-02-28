@@ -43,7 +43,7 @@ portfolios: [
     imageFileName: "portfolio/leaving.jpg",
     header: "Bride and Groom leave",
     subheader: "11:30pm",
-    content: "This is the last bit where we say goodbye and thanks for coming!"
+    content: ""
   }
 ]
 ---

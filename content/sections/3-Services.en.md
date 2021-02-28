@@ -21,7 +21,7 @@ services: [
   {
     iconName: "CarIcon",
     header: "Parking",
-    content: "Parking information...."
+    content: "Unfortunately, both the church and Mey hall do not have copious parking. If you can't find any spaces around the church, we encourage you to park on Janet street just by the river, which is just a few minutes walk from the church."
   }
 ]
 contactSuggestText: "Please feel free to send us a message if you have any questions about logistics or anything else!"

@@ -87,6 +87,14 @@ const MealForm = ({ input, callback, goBack }) => {
             <Carousel.Item key={person.name}>
               <Form onSubmit={(e) => submit(e, person.name)}>
                 <h5>Please select the meal choices for {person.name}:</h5>
+                <Form.Text>
+                  GF=Gluten Free, DF=Dairy Free, EF=Egg Free, NF=Nut Free, V=Vegetarian
+                </Form.Text>
+                <Form.Text>Symbols mean meals can be altered to fit these requirements</Form.Text>
+                <Form.Text>
+                  If you&apos;re vegan, please put it in the &quot;Other Requirements&quot; box and
+                  we&apos;ll get in touch with you
+                </Form.Text>
                 <Form.Group>
                   <Form.Label>Starter</Form.Label>
                   <Form.Control
@@ -98,10 +106,10 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option value="" selected disabled>
                       Please select
                     </option>
-                    <option>Garlic Bread</option>
-                    <option>Purple Soup</option>
-                    <option>Chicken</option>
-                    <option>N/A due to dietary requirements</option>
+                    <option>Lentil Soup (GF EF)</option>
+                    <option>Leek and Potato with Smoked Chicken Soup (GF EF)</option>
+                    <option>Fanned Galia Melon with Compote (GF DF EF)</option>
+                    <option>N/A due to other requirements (we&apos;ll contact you!)</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -115,10 +123,10 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option value="" selected disabled>
                       Please select
                     </option>
-                    <option>Yum yum</option>
-                    <option>Delicious Pie</option>
-                    <option>Orange Apple</option>
-                    <option>N/A due to dietary requirements</option>
+                    <option>Butternut Squash and Wild Mushroom Stroganoff (DF V)</option>
+                    <option>Chicken stuffed with Haggis</option>
+                    <option>Roast beef and Yorkshire puddings (GF[no YP] DF)</option>
+                    <option>N/A due to other requirements (we&apos;ll contact you!)</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -132,10 +140,10 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option value="" selected disabled>
                       Please select
                     </option>
-                    <option>Kentucky Friend Chicken</option>
-                    <option>Something tasty</option>
-                    <option>A big stick</option>
-                    <option>N/A due to dietary requirements</option>
+                    <option>Warm chocolate fudge cake (GF V)</option>
+                    <option>Sticky toffee pudding (GF V)</option>
+                    <option>Individual Fruit Pavlova (GF DF V)</option>
+                    <option>N/A due to other requirements (we&apos;ll contact you!)</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
@@ -154,12 +162,18 @@ const MealForm = ({ input, callback, goBack }) => {
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>Other Requirements</Form.Label>
+                  <Form.Label>
+                    Other Requirements (Dietary, Children&apos;s Meal, High chair, etc.)
+                  </Form.Label>
+                  <Form.Text>
+                    Please state any dietary requirements even if your meal is one of the
+                    gluten/dairy/egg/nut free or vegetarian options.
+                  </Form.Text>
                   <Form.Control
                     type="input"
                     value={additionalInfo}
                     onChange={(e) => setAdditionalInfo(e.target.value)}
-                    placeholder="E.g. Gluton intolerent, lactose intolerant, vegan"
+                    placeholder="E.g. Gluten intolerent, lactose intolerant, vegan"
                   />
                 </Form.Group>
                 <Form.Row>
