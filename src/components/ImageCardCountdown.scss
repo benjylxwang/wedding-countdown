@@ -1,9 +1,11 @@
 .image-card {
   height: calc(100vh);
+  min-height: 812px;
   background-color: grey;
 
   .image {
     height: calc(100vh);
+    min-height: 812px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
