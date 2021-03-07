@@ -147,7 +147,7 @@ const MealForm = ({ input, callback, goBack }) => {
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>Drink</Form.Label>
+                  <Form.Label>Drink with Meal</Form.Label>
                   <Form.Control
                     as="select"
                     custom
@@ -157,8 +157,9 @@ const MealForm = ({ input, callback, goBack }) => {
                     <option value="" selected disabled>
                       Please select
                     </option>
-                    <option>Alcoholic</option>
-                    <option>Non-Alcoholic</option>
+                    <option>Red Wine</option>
+                    <option>White Wine</option>
+                    <option>Soft Drink</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group>

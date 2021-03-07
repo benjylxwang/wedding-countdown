@@ -13,3 +13,12 @@
     @include serif-font;
   }
 }
+
+@media(max-width: 768px) {
+  .section-header {
+    h3.section-subheading {
+      margin-bottom: 25px;
+    }
+  }
+  
+}

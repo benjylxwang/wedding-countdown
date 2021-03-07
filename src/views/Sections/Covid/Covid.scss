@@ -2,10 +2,21 @@
   background-color: #ffbdd8;
 }
 
+.covid-section .text {
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .covid-section .container {
   max-width: 800px;
 }
 
 .covid-section .link p a {
   color: rgb(51, 51, 51);
+}
+
+.covid-section .section-header h3.section-subheading {
+  margin-bottom: 15px;
 }

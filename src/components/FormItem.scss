@@ -36,8 +36,9 @@
 
 @media (min-width: 768px) {
   .rsvp-form {
-    margin-top: 15vh;
-    height: 80vh;
+    margin-top: 8vh;
+    height: 90vh;
+    min-height: 90vh;
     padding: 20px;
   }
   .image-card .container.rsvp-form {
