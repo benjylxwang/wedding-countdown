@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-startbootstrap-agency",
-  "description": "gatsby version of startbootstrap-agency with i18n support",
-  "version": "0.1.0",
-  "author": "thundermiracle",
+  "name": "wedding-website",
+  "description": "Wedding website for the wedding of Benjy and Cara",
+  "version": "1.0.0",
+  "author": "benjylxwang",
   "bugs": {
-    "url": "https://github.com/thundermiracle/gatsby-startbootstrap-agency/issues"
+    "url": "https://github.com/benjylxwang/wedding-countdown/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -63,22 +63,24 @@
     "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "^2.0.4"
   },
-  "homepage": "https://thundermiracle.github.io/gatsby-startbootstrap-agency",
+  "homepage": "benjyandcara.com",
   "keywords": [
-    "gatsby",
-    "gatsbyjs",
-    "landing page",
-    "landing",
-    "i18n",
-    "eslint",
-    "bootstrap",
-    "startbootstrap-agency"
+    "wedding",
+    "wedding countdown",
+    "benjy",
+    "cara",
+    "benjy and cara",
+    "marriage",
+    "married",
+    "wedding rsvp",
+    "scotland",
+    "thurso"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thundermiracle/gatsby-startbootstrap-agency.git"
+    "url": "git+https://github.com/benjylxwang/wedding-countdown.git"
   },
   "scripts": {
     "clean": "gatsby clean",

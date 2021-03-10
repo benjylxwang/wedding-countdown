@@ -1,5 +1,5 @@
 const path = require("path");
-const { title, keywords, description, author, defaultLang, trackingId } = require("./config/site");
+const { title, keywords, description, author, defaultLang } = require("./config/site");
 
 module.exports = {
   siteMetadata: {
@@ -10,16 +10,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId,
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: title,
-        short_name: "Agency",
+        short_name: "Benjy and Cara",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#fed136",

@@ -18,27 +18,35 @@ const Covid = ({ className, frontmatter }) => {
   return (
     <PageSection className={clsx("covid-section", className)} id={anchor}>
       <Row>
-        <Icon iconName="VirusIcon" size="2x" className={clsx("col-lg-1", className)} />
+        <Icon
+          iconName="VirusIcon"
+          size="2x"
+          className={clsx("virus-icon", "col-lg-1", className)}
+        />
         <SectionHeader lg={10} header={rootHeader} subheader={rootSubHeader} />
-        <Icon iconName="VirusIcon" size="2x" className={clsx("col-lg-1", className)} />
+        <Icon
+          iconName="VirusIcon"
+          size="2x"
+          className={clsx("virus-icon", "col-lg-1", className)}
+        />
       </Row>
       <Row>
         <div className={clsx("col-lg-12", "text", className)}>
-          {details.map(
-            (paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            )
-          )}
+          {details.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       </Row>
       <Row>
-        {links.map(
-          ({ title, url }) => (
-            <div key={title} className={clsx("col-lg-4", "text-center", "link", className)}>
-              <p><a href={url} target="_blank" rel="noopener noreferrer"><Icon iconName="LinkIcon" /> {title}</a></p>
-            </div>
-          )
-        )}
+        {links.map(({ title, url }) => (
+          <div key={title} className={clsx("col-lg-4", "text-center", "link", className)}>
+            <p>
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <Icon iconName="LinkIcon" /> {title}
+              </a>
+            </p>
+          </div>
+        ))}
       </Row>
     </PageSection>
   );

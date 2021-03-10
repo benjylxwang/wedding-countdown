@@ -25,9 +25,17 @@ const Registry = ({ className, frontmatter }) => {
           rel="noopener noreferrer"
         >
           <Row>
-            <Icon className={clsx("col-lg-1", className)} size="2x" iconName="LinkIcon" />
+            <Icon
+              className={clsx("link-icon", "col-lg-1", className)}
+              size="2x"
+              iconName="LinkIcon"
+            />
             <SectionHeader lg={10} header={rootHeader} subheader={rootSubHeader} />
-            <Icon className={clsx("col-lg-1", className)} size="2x" iconName="LinkIcon" />
+            <Icon
+              className={clsx("link-icon", "col-lg-1", className)}
+              size="2x"
+              iconName="LinkIcon"
+            />
           </Row>
         </a>
       </Row>
