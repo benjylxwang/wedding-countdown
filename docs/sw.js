@@ -27,48 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-dabfb90ed3b27c830900.js"
+    "url": "webpack-runtime-befbaad74e019466c3ec.js"
   },
   {
-    "url": "framework-17ffd6813ef78213be06.js"
+    "url": "framework-9f754d8b33503a24e84f.js"
   },
   {
-    "url": "app-dc7181a9527824868ef6.js"
+    "url": "app-de7a49e80105263e9a82.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "130a59f7330a7f985de7aa9cb2a2f952"
+    "revision": "11b1425e0b586e424c362122d371796f"
   },
   {
-    "url": "google-fonts/s/droidserif/v13/tDbI2oqRg1oM3QBjjcaDkOr9rAU.woff2",
-    "revision": "62b4ed3cb1a22974f1a1b14a45ebb76e"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbK2oqRg1oM3QBjjcaDkOr4nAfcHg.woff2",
-    "revision": "847076af0a2064282724f913e8443124"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbV2oqRg1oM3QBjjcaDkOJGiRD7OwE.woff2",
-    "revision": "c914631f20a99ca0d322d775090ea4f7"
-  },
-  {
-    "url": "google-fonts/s/droidserif/v13/tDbX2oqRg1oM3QBjjcaDkOr4lLz5CwOnSA.woff2",
-    "revision": "21b7bed43e1c81de0277b6e2e96e9981"
-  },
-  {
-    "url": "google-fonts/s/kaushanscript/v9/vm8vdRfvXFLG3OLnsO15WYS5DG74wNI.woff2",
-    "revision": "e2ea67e80b95334da4768bffdf3d4f9d"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2",
-    "revision": "39d93cf678c740f9f6b2b1cfde34bee3"
-  },
-  {
-    "url": "google-fonts/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
-    "revision": "bc3aa95dca08f5fee5291e34959c27bc"
-  },
-  {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-19245c8506e49b502b12.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -76,10 +48,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "28a20441e45b75975476cd4ea45c8a45"
+    "revision": "da6f765f15056cdb6555921b6ee43141"
   },
   {
-    "url": "polyfill-a2f28dd3a7dff21dc20d.js"
+    "url": "polyfill-140e3b63fc9834dd4e0f.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -175,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-dc7181a9527824868ef6.js`))) {
+  if (!resources || !(await caches.match(`/app-de7a49e80105263e9a82.js`))) {
     return await fetch(event.request)
   }
 

@@ -13,7 +13,7 @@ const ThanksForResponding = ({ input, callback }) => {
       <p>Here&apos;s a link to our gift registry if you&apos;d like to check it out!</p>
       <Button
         variant="primary"
-        href="https://www.google.com"
+        href="https://www.weddingshop.com/Buy/View/82337"
         target="_blank"
         rel="noopener noreferrer"
       >
