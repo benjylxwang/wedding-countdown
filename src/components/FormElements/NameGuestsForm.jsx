@@ -38,7 +38,10 @@ const NameGuestsForm = ({ input, callback, goBack }) => {
     return (
       <>
         <Form className="name_guests_form" onSubmit={submit}>
-          <h5>Looks like you&apos;ve got {input.party.length} extra people to bring!</h5>
+          <h5>
+            Looks like you&apos;ve got {input.party.length} extra{" "}
+            {input.party.length === 1 ? "person" : "people"} to bring!
+          </h5>
           <Form.Group controlId="formPartyLeader">
             <Form.Control type="input" value={input.leader} disabled />
           </Form.Group>

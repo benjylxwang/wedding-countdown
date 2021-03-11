@@ -38,8 +38,8 @@
   .rsvp-form {
     margin-top: 8vh;
     height: 90vh;
-    min-height: 90vh;
-    padding: 20px;
+    min-height: calc(800px - 8vh);
+    padding: 0;
   }
   .image-card .container.rsvp-form {
     background-color: rgba(black, 0.6);
