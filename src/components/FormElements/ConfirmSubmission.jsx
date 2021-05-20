@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
-import { Form, Button, Container, Row, Col, Spinner } from "react-bootstrap";
+import { Button, Container, Row, Col, Spinner } from "react-bootstrap";
 
 import "./ConfirmSubmission.scss";
 
@@ -32,27 +31,27 @@ const ConfirmSubmission = ({ input, callback, goBack }) => {
       .then((response) => response.json())
       .then((received) => {
         setLoading(false);
-        console.log(received);
+        // console.log(received);
 
         if (received.result === "error") {
-          console.log(received.message);
-          console.log(received.debug);
+          // console.log(received.message);
+          // console.log(received.debug);
         } else {
           callback(input);
         }
       })
-      .catch((err) => {
+      .catch(() => {
         setLoading(false);
         // Server error!
-        console.log(err);
+        // console.log(err);
       });
   };
 
   if (input && input.responses) {
     return (
       <Container className="confirm_submission">
-        <h2>Confirm!</h2>
-        {input.responses.map((e, i) => (
+        <h2>Confirm?</h2>
+        {input.responses.map((e) => (
           <Row key={e.name}>
             <Col>{e.name}</Col>
             <Col className={e.accepted ? "Accepted" : "Declined"}>

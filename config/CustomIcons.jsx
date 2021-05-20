@@ -1,5 +1,4 @@
 import makeFAIcon from "utils/makeFAIcon";
-import makeCountryIcon from "utils/makeCountryIcon";
 
 import {
   faPlane,

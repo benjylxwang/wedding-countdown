@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
-import { Form, Button, Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 import "./ThanksForResponding.scss";
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
 import { Form, Button, Spinner } from "react-bootstrap";
 
@@ -48,16 +47,16 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
         setLoading(false);
         if (received.result === "error") {
           // Error from server!!!
-          console.log(received.message);
+          // console.log(received.message);
           setErrorMsg(received.message);
         } else if (received.result === "not_found") {
           // Can't find leader
-          console.log(received.message);
+          // console.log(received.message);
           setWrongName(data.leader);
         } else if (received.result === "repeat") {
           // Already RSVPd!
-          console.log(received.message);
-          console.log(received);
+          // console.log(received.message);
+          // console.log(received);
           setErrorMsg("");
           setWrongName("");
           alreadyRSVPdCallback(received.response);
@@ -65,7 +64,7 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
           // No extra people
           data.guests = [];
           data.food = received.food;
-          console.log(data);
+          // console.log(data);
           callback(data, 1);
           setErrorMsg("");
           setWrongName("");
@@ -75,16 +74,16 @@ const PartyLeaderForm = ({ callback, alreadyRSVPdCallback, cancelRSVP }) => {
           data.food = received.food;
           // Remove leader from party list
           data.party.splice(data.party.indexOf(data.leader), 1);
-          console.log(data);
+          // console.log(data);
           callback(data);
           setErrorMsg("");
           setWrongName("");
         }
       })
-      .catch((err) => {
+      .catch(() => {
         setLoading(false);
         // Server error!
-        console.log(err);
+        // console.log(err);
         setErrorMsg("Sorry but the server seems to be down. Please try again later.");
       });
   };

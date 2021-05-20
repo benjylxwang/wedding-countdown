@@ -3,19 +3,14 @@ import PropTypes from "prop-types";
 
 import clsx from "clsx";
 
-import { Navbar, Container, Nav } from "react-bootstrap";
-
-import useSmoothScrollTo from "hooks/useSmoothScrollTo";
-import Icon from "components/Icon";
-import NavItem from "components/NavItem";
+import { Navbar, Container } from "react-bootstrap";
 
 import "./NavbarAlt.scss";
 
-const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
-  const { brand, menuText } = frontmatter;
+const MyNavbar = ({ frontmatter, extraItems }) => {
+  const { brand } = frontmatter;
 
   const [expanded] = React.useState(false);
-
 
   return (
     <Navbar
@@ -36,13 +31,11 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
 };
 
 MyNavbar.propTypes = {
-  anchors: PropTypes.arrayOf(PropTypes.string),
   frontmatter: PropTypes.object,
   extraItems: PropTypes.any,
 };
 
 MyNavbar.defaultProps = {
-  anchors: [],
   frontmatter: {},
   extraItems: null,
 };

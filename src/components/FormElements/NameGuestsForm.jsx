@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
 import { Form, Button } from "react-bootstrap";
 
@@ -25,7 +24,7 @@ const NameGuestsForm = ({ input, callback, goBack }) => {
     data.guests = guests;
 
     // Call callback function with data response
-    console.log(data);
+    // console.log(data);
     callback(data);
   };
 

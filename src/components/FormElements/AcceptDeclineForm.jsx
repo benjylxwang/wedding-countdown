@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
 import { Form, Button, ButtonGroup, Row, Col } from "react-bootstrap";
 
@@ -72,7 +71,7 @@ const AcceptDeclineForm = ({ input, callback, goBack }) => {
     };
 
     // Call callback function with data response
-    console.log(data);
+    // console.log(data);
 
     if (acceptCount === 0 || !input.food) {
       callback(data, 1);

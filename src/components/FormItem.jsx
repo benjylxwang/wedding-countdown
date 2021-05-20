@@ -1,39 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 
-import { Button, Container, Card, Carousel, Row } from "react-bootstrap";
+import { Button, Container, Row } from "react-bootstrap";
 
-import "./FormItem.scss"
+import "./FormItem.scss";
 
 const FormItem = ({ form, cancelRSVP }) => {
- 
   return (
     <Container className={clsx("rsvp-form text-white text-center")}>
-        <Row className={clsx("align-center")}>
-            {form}
-        </Row>
+      <Row className={clsx("align-center")}>{form}</Row>
 
-        {
-            cancelRSVP ? 
-            <div className={clsx("buttons")}>
-                <Button className={clsx("cancel-button")} variant="outline-secondary" onClick={cancelRSVP} >Cancel</Button>
-            </div>
-            : 
-            null
-        }
+      {cancelRSVP ? (
+        <div className={clsx("buttons")}>
+          <Button
+            className={clsx("cancel-button")}
+            variant="outline-secondary"
+            onClick={cancelRSVP}
+          >
+            Cancel
+          </Button>
+        </div>
+      ) : null}
     </Container>
   );
 };
 
 FormItem.propTypes = {
-    form: PropTypes.object,
-    cancelRSVP: PropTypes.func,
+  form: PropTypes.object,
+  cancelRSVP: PropTypes.func,
 };
 
 FormItem.defaultProps = {
-    form: null,
-    cancelRSVP: null,
+  form: null,
+  cancelRSVP: null,
 };
 
 export default FormItem;

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
-import { Form, Button, ButtonGroup, Row, Col, Carousel } from "react-bootstrap";
+import { Form, Button, Carousel } from "react-bootstrap";
 
 import "./MealForm.scss";
 
@@ -51,7 +50,7 @@ const MealForm = ({ input, callback, goBack }) => {
     ];
 
     setOutput(output);
-    console.log(output);
+    // console.log(output);
 
     if (index === input.acceptCount - 1) {
       output.leader = input.leader;
@@ -63,7 +62,7 @@ const MealForm = ({ input, callback, goBack }) => {
         ...output.responses,
         ...input.responses.filter((response) => !response.accepted),
       ];
-      console.log(output);
+      // console.log(output);
       // Call callback function with data response
       callback(output);
     } else {

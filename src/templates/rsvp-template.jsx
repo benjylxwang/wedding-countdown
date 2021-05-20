@@ -3,19 +3,17 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 import NavbarAlt from "views/NavbarAlt";
-import * as Sections from "views/Sections";
 import SEO from "components/SEO";
 import LanguageSelector from "components/LanguageSelector";
 
 import "utils/fixFontAwesome";
 import breakDownAllNodes from "utils/breakDownAllNodes";
-import fileNameToSectionName from "utils/fileNameToSectionName";
 
-import "../style/rsvp.scss";  
+import "../style/rsvp.scss";
 
 /**
  * get file name list from content/sections folder
- */ 
+ */
 
 export const query = graphql`
   query RSVPQuery($langKey: String!) {
@@ -112,7 +110,6 @@ const RSVPPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) 
     },
     allMarkdownRemark: { nodes },
   } = data;
-  console.log(Sections);
 
   const { navBarNode } = breakDownAllNodes(nodes);
 
@@ -125,11 +122,13 @@ const RSVPPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) 
 
   return (
     <>
-      <SEO lang={langKey} title="Time to Get Married" keywords={keywords} description={description} />
-      <NavbarAlt
-        frontmatter={navBarNode.frontmatter}
-        extraItems={langSelectorPart}
+      <SEO
+        lang={langKey}
+        title="Time to Get Married"
+        keywords={keywords}
+        description={description}
       />
+      <NavbarAlt frontmatter={navBarNode.frontmatter} extraItems={langSelectorPart} />
     </>
   );
 };

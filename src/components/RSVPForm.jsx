@@ -65,7 +65,7 @@ const RSVPForm = ({ frontmatter, handleRSVPSuccess }) => {
         },
       )
         .then((data) => {
-          console.log(data.result);
+          // console.log(data.result);
           if (data.result === "error") {
             setAlertVariant("danger");
             setAlertMessage(data.message);

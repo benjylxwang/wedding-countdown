@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
-import { Form, Button, Container, Row, Col, Spinner } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 import "./ResponseSummary.scss";
 
@@ -15,7 +14,7 @@ const ResponseSummary = ({ input, callback, goBack }) => {
     return (
       <Container className="response_summary">
         <h2>Looks like you&apos;ve already responded!</h2>
-        {input.people.map((e, i) => (
+        {input.people.map((e) => (
           <Row key={e.name}>
             <Col>{e.name}</Col>
             <Col className={e.accepted ? "Accepted" : "Declined"}>

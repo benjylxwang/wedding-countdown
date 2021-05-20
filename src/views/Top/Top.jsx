@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-import { Button } from "react-bootstrap";
-import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import ImageCardCountdown from "components/ImageCardCountdown";
 
 const endtime = new Date(2021, 6, 3, 13, 0, 0, 0);
@@ -24,7 +22,7 @@ const Top = ({ frontmatter }) => {
       const secsL = s % 60;
       s = (s - secsL) / 60;
       const minsL = s % 60;
-      s = (s - minsL) / 60
+      s = (s - minsL) / 60;
       const hrsL = s % 24;
       s = (s - hrsL) / 24;
       const daysL = s;
@@ -42,8 +40,16 @@ const Top = ({ frontmatter }) => {
     return null;
   }
 
-  const { subheader, imageFileName, jumpToAnchor, jumpToAnchorText,
-    daysText, hoursText, minutesText, secondsText, msText } = frontmatter;
+  const {
+    subheader,
+    imageFileName,
+    jumpToAnchorText,
+    daysText,
+    hoursText,
+    minutesText,
+    secondsText,
+    msText,
+  } = frontmatter;
 
   const countdown = (
     <div id="countdown">
@@ -54,35 +60,33 @@ const Top = ({ frontmatter }) => {
       <div id="hrs" className="countdown_number">
         <p className="number">{hrs}</p>
         <p>{hoursText}</p>
-
       </div>
       <div id="mins" className="countdown_number">
         <p className="number">{mins}</p>
         <p>{minutesText}</p>
-
       </div>
       <div id="secs" className="countdown_number">
         <p className="number">{secs}</p>
         <p>{secondsText}</p>
-
       </div>
       <div id="ms" className="countdown_number">
         <p className="number">{ms}</p>
         <p>{msText}</p>
       </div>
     </div>
-  )
+  );
 
-  const imageCountdown = 
-  <ImageCardCountdown
-    imageFileName={imageFileName}
-    countdown={countdown}
-    subheader={subheader}
-    jumpToAnchorText={jumpToAnchorText}
-  />;
+  const imageCountdown = (
+    <ImageCardCountdown
+      imageFileName={imageFileName}
+      countdown={countdown}
+      subheader={subheader}
+      jumpToAnchorText={jumpToAnchorText}
+    />
+  );
 
-  return (imageCountdown);
-}
+  return imageCountdown;
+};
 
 Top.propTypes = {
   frontmatter: PropTypes.object.isRequired,
