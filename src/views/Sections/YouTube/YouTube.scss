@@ -1,0 +1,16 @@
+.youtube-section .container {
+  max-width: 960px;
+  text-align: center;
+}
+
+#embed {
+  width: 100%;
+  height: calc(960px / 16 * 9);
+}
+
+@media (max-width: 970px) {
+  #embed {
+    width: 100%;
+    height: calc(100vw / 16 * 9);
+  }
+}

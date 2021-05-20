@@ -103,7 +103,7 @@ export const query = graphql`
   }
 `;
 
-const RSVPPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) => {
+const RSVPPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
   const {
     site: {
       siteMetadata: { keywords, description },
@@ -135,11 +135,11 @@ const RSVPPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) 
 
 RSVPPage.propTypes = {
   data: PropTypes.object.isRequired,
-  pathContext: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 RSVPPage.defaultProps = {
-  pathContext: {
+  pageContext: {
     langKey: "en",
     defaultLang: "en",
     langTextMap: {},

@@ -108,7 +108,7 @@ export const query = graphql`
   }
 `;
 
-const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } }) => {
+const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } }) => {
   const {
     site: {
       siteMetadata: { keywords, description },
@@ -161,11 +161,11 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
 IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
-  pathContext: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 IndexPage.defaultProps = {
-  pathContext: {
+  pageContext: {
     langKey: "en",
     defaultLang: "en",
     langTextMap: {},
