@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 import { Button, Container, Card, Carousel } from "react-bootstrap";
-import Image from "components/Image";
+import ImageHQ from "components/ImageHQ";
 
 import FormItem from "components/FormItem";
 import "./ImageCardCountdown.scss";
@@ -88,7 +88,7 @@ const ImageCardCountdown = ({
       style={{ backgroundColor: "grey" }}
       className={clsx("image-card bg-grey text-white text-center", className)}
     >
-      <Image className="image" fileName={imageFileName} alt={imageAlt || subheader} />
+      <ImageHQ className="image" fileName={imageFileName} alt={imageAlt || subheader} />
       <Card.ImgOverlay className="no-padding">
         <Carousel
           activeIndex={index}
