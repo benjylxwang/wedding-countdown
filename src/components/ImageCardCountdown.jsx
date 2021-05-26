@@ -25,37 +25,46 @@ const ImageCardCountdown = ({
 }) => {
   const [index, setIndex] = useState(0);
   const [responded, setResponded] = useState(false);
-
   const [input, setInput] = useState([]);
+  const [atHome, setAtHome] = useState(true);
 
   const startRSVP = () => {
     setIndex(1);
     setInput([]);
+    setAtHome(false);
   };
 
   const cancelRSVP = () => {
     setIndex(0);
+    setAtHome(true);
   };
 
   const goToSummary = (data) => {
     setIndex(7);
     setInput([data, ...input]);
+    setAtHome(false);
   };
 
   const nextPage = (data, toSkip = 0) => {
     setIndex(index + 1 + toSkip);
     setInput([data, ...input]);
+    setAtHome(false);
   };
 
   const goBack = (toSkip = 0) => {
     setIndex(index - 1 - toSkip);
     input.shift();
     setInput(input);
+
+    if (index - 1 - toSkip === 0) {
+      setAtHome(false);
+    }
   };
 
   const toHome = (hasResponded = true) => {
     setIndex(0);
     setResponded(hasResponded);
+    setAtHome(true);
   };
 
   const thanksForResponding = <h3>Thanks for responding!</h3>;
@@ -138,6 +147,19 @@ const ImageCardCountdown = ({
           </Carousel.Item>
         </Carousel>
       </Card.ImgOverlay>
+
+      {atHome ? (
+        <div className={clsx("photo-credits", className)}>
+          <p>
+            Images courtesy of{" "}
+            <a href="https://catrionaelizabeth.com/" target="_blank" rel="noopener noreferrer">
+              Catriona Elizabeth Photography
+            </a>
+          </p>
+        </div>
+      ) : (
+        ""
+      )}
     </Card>
   );
 };
