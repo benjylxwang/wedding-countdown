@@ -14,9 +14,9 @@ const Image = ({ fileName, alt, ...restProps }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1920) {
+                fluid(maxWidth: 3840, quality: 100) {
                   # Choose either the fragment including a small base64ed image, a traced placeholder SVG, or one without.
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
