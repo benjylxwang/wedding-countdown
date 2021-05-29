@@ -18,11 +18,9 @@ seconds=`date +"%S"`
 ns=`date +"%N"`
 ms=$((${ns#0} / 1000000))
 
-old="2021,6,3,12,0,0,0"
-
 replace="$year,$month,$day,$hour,$minute,$seconds,$ms"
 
-searchString="s/$regex/$old/g"
+searchString="s/$regex/$replace/g"
 echo $searchString
 
 # replace date in time file
@@ -40,5 +38,5 @@ cp CNAME docs/CNAME
 
 # Git commit and push
 git add .
-git commit -m "wedding time test"
+git commit -m "Saved wedding time!"
 git push 
