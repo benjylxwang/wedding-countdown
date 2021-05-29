@@ -22,7 +22,7 @@ old="2021,6,3,12,0,0,0"
 
 replace="$year,$month,$day,$hour,$minute,$seconds,$ms"
 
-searchString="s/$regex/$replace/g"
+searchString="s/$regex/$old/g"
 echo $searchString
 
 # replace date in time file
