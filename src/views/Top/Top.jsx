@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 import ImageCardCountdown from "components/ImageCardCountdown";
-
-const endtime = new Date(2021, 6, 3, 13, 0, 0, 0);
+import endtime from "./time";
 
 const Top = ({ frontmatter }) => {
   const [days, setDays] = useState(0);
@@ -11,11 +10,20 @@ const Top = ({ frontmatter }) => {
   const [mins, setMins] = useState(0);
   const [secs, setSecs] = useState(0);
   const [ms, setMS] = useState(0);
+  const [married, setMarried] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      let s = endtime - now;
+
+      let s;
+      if (now <= endtime) {
+        s = endtime - now;
+        setMarried(false);
+      } else {
+        s = now - endtime;
+        setMarried(true);
+      }
 
       const msL = s % 1000;
       s = (s - msL) / 1000;
@@ -42,6 +50,7 @@ const Top = ({ frontmatter }) => {
 
   const {
     subheader,
+    subheaderMarried,
     imageFileName,
     jumpToAnchorText,
     daysText,
@@ -80,7 +89,7 @@ const Top = ({ frontmatter }) => {
     <ImageCardCountdown
       imageFileName={imageFileName}
       countdown={countdown}
-      subheader={subheader}
+      subheader={married ? subheaderMarried : subheader}
       jumpToAnchorText={jumpToAnchorText}
     />
   );

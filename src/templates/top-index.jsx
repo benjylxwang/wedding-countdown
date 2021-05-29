@@ -91,6 +91,7 @@ export const query = graphql`
             imageFileName
           }
           subheader
+          subheaderMarried
           telephone
           title
           timeline {
