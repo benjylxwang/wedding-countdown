@@ -39,6 +39,13 @@ const Registry = ({ className, frontmatter }) => {
           </Row>
         </a>
       </Row>
+      <Row>
+
+        <div className={clsx("col-lg-12", "text", className)}>
+          <p>So many of our generous friends and family have already bought everything on the list! You can visit it to donate to our chosen charities or give to our house deposit fund.</p>
+          <p>If you&apos;d like to give us something more specific send us a message!</p>
+        </div>
+      </Row>
     </PageSection>
   );
 };
