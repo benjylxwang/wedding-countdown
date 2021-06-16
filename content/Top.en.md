@@ -21,8 +21,8 @@ imageFileName: [
     "header-bg (15).jpg", 
     "header-bg-cropped.png"
     ]
-jumpToAnchor: "RSVP"
-jumpToAnchorText: "RSVP"
+jumpToAnchor: "Live Stream"
+jumpToAnchorText: "Live Stream"
 daysText: "Days"
 hoursText: "Hours"
 minutesText: "Minutes"

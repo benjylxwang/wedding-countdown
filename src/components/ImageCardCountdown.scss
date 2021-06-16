@@ -1,6 +1,8 @@
 .image-card {
   height: calc(100vh);
   min-height: 812px;
+  max-height: 100vh;
+  max-width: 100vw;
   background-color: grey;
 
   .image {
@@ -128,7 +130,7 @@
 
   .RSVPButton {
     margin-top: 10px;
-    width: 200px;
+    width: 300px;
   }
 
   .RSVPButton.text-uppercase.btn.btn-outline-secondary.btn-lg {

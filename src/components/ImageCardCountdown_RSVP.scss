@@ -1,0 +1,157 @@
+.image-card {
+  height: calc(100vh);
+  min-height: 812px;
+  background-color: grey;
+
+  .image {
+    height: calc(100vh);
+    min-height: 812px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    div {
+      background-color: grey;
+      height: 100%;
+    }
+  }
+  .no-padding {
+    padding: 0;
+  }
+
+  .faded_black {
+    background-color: rgba(black, 0.5);
+  }
+
+  .intro-text {
+    margin-top: 50vh;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .intro-lead-in {
+      font-size: 25px;
+      font-style: italic;
+      line-height: 30px;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px #000000;
+      @include serif-font;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      margin-bottom: 25px;
+      @include heading-font;
+    }
+  }
+}
+
+.countdown {
+  text-align: center;
+}
+
+.countdown_number {
+  float: left;
+  width: 20%;
+}
+
+#secs,
+#ms {
+  width: 20%;
+}
+
+.countdown_number p.number {
+  font-size: 8vw;
+  text-shadow: 1px 1px #000000;
+}
+
+.countdown_number p {
+  font-size: 2.5vw;
+  text-shadow: 1px 1px #000000;
+}
+
+.intro-text h3 {
+  @include script-font;
+  font-weight: normal;
+}
+
+.photo-credits {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(black, 0.2);
+  padding-right: 8px;
+  padding-left: 10px;
+}
+
+.photo-credits p {
+  padding: 0;
+  margin: 0;
+}
+
+.photo-credits a {
+  color: $light-primary;
+}
+
+@media (min-width: 768px) {
+  .image-card {
+    height: 100vh;
+    min-height: 812px;
+    .image {
+      height: 100vh;
+      min-height: 812px;
+    }
+
+    .intro-text {
+      margin-top: 48.4vh;
+      margin-bottom: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-shadow: 2px 2px #000000;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+
+  .RSVPButton {
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .RSVPButton.text-uppercase.btn.btn-outline-secondary.btn-lg {
+    font-size: 4vh;
+  }
+
+  .countdown_number {
+    float: left;
+    width: 20%;
+  }
+
+  .countdown_number p.number {
+    font-size: calc(min(10vh, 6vw));
+    text-shadow: 2px 2px #000000;
+  }
+
+  .countdown_number p {
+    font-size: calc(min(3vh, 2vw));
+    text-shadow: 1px 1px #000000;
+  }
+
+  #secs,
+  #ms {
+    width: 20%;
+  }
+}

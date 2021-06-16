@@ -52,6 +52,7 @@ const Top = ({ frontmatter }) => {
     subheader,
     subheaderMarried,
     imageFileName,
+    jumpToAnchor,
     jumpToAnchorText,
     daysText,
     hoursText,
@@ -91,6 +92,7 @@ const Top = ({ frontmatter }) => {
       countdown={countdown}
       subheader={married ? subheaderMarried : subheader}
       jumpToAnchorText={jumpToAnchorText}
+      jumpToAnchor={jumpToAnchor}
     />
   );
 
