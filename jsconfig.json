@@ -12,5 +12,5 @@
       "config/*": ["config/*"]
     }
   },
-  "exclude": ["node_modules", "public"]
+  "exclude": ["node_modules", "docs"]
 }
