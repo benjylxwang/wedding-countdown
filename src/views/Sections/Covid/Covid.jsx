@@ -48,6 +48,20 @@ const Covid = ({ className, frontmatter }) => {
           </div>
         ))}
       </Row>
+      <hr />
+      <Row>
+        <div className={clsx("col-lg-12", "updates", className)}>
+          <p>
+            *UPDATE* To help keep everyone safe, we&apos;ve decided to split the wedding reception
+            into two parts, each attended by half of the guests. Emails have been sent out letting
+            people know which group they are in and with further details on how this will work.
+          </p>
+          <p>
+            *UPDATE* In order to facilitate the two receptions, the ceremony has been moved to{" "}
+            <strong>10am BST.</strong>
+          </p>
+        </div>
+      </Row>
     </PageSection>
   );
 };
