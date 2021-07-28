@@ -79,10 +79,10 @@ const Top = ({ frontmatter }) => {
         <p className="number">{secs}</p>
         <p>{secondsText}</p>
       </div>
-      <div id="ms" className="countdown_number">
+      {/* <div id="ms" className="countdown_number">
         <p className="number">{ms}</p>
         <p>{msText}</p>
-      </div>
+      </div> */}
     </div>
   );
 

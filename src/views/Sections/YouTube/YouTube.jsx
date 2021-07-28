@@ -23,7 +23,7 @@ const YouTube = ({ className, frontmatter }) => {
       <Row id="embed-container">
         <iframe
           id="embed"
-          src={link + "?autoplay=1"}
+          src={link}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

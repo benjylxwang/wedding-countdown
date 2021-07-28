@@ -3,26 +3,47 @@ header: ""
 subheader: "We're getting married at 10am on the 3rd of July 2021!"
 subheaderMarried: "We've been married for"
 imageFileName: [
-    "header-bg-new.jpg", 
-    "header-bg (1).jpg", 
-    "header-bg (2).jpg", 
-    "header-bg (3).jpg", 
-    "header-bg (4).jpg", 
-    "header-bg (6).jpg", 
-    "header-bg (7).jpg", 
-    "header-bg (8).jpg", 
-    "header-bg (9).jpg", 
-    "header-bg (5).jpg", 
-    "header-bg (10).jpg", 
-    "header-bg (11).jpg", 
-    "header-bg (12).jpg", 
-    "header-bg (13).jpg", 
-    "header-bg (14).jpg", 
-    "header-bg (15).jpg", 
-    "header-bg-cropped.png"
+    "feature (9).jpg",
+    "feature (1).jpg",
+    "feature (2).jpg",
+    "feature (3).jpg",
+    "feature (4).jpg",
+    "feature (5).jpg",
+    "feature (6).jpg",
+    "feature (7).jpg",
+    "feature (8).jpg",
+    "feature (10).jpg",
+    "feature (11).jpg",
+    "feature (12).jpg",
+    "feature (13).jpg",
+    "feature (14).jpg",
+    "feature (15).jpg",
+    "feature (16).jpg",
+    "feature (17).jpg",
+    "feature (18).jpg",
+    "feature (19).jpg",
+    "feature (20).jpg",
+    "feature (21).jpg",
+    "feature (22).jpg",
+    "feature (23).jpg",
+    "feature (24).jpg",
+    "feature (25).jpg",
+    "feature (26).jpg",
+    "feature (27).jpg",
+    "feature (28).jpg",
+    "feature (29).jpg",
+    "feature (30).jpg",
+    "feature (31).jpg",
+    "feature (32).jpg",
+    "feature (33).jpg",
+    "feature (34).jpg",
+    "feature (35).jpg",
+    "feature (36).jpg",
+    "feature (37).jpg",
+    "feature (1).png",
     ]
-jumpToAnchor: "Live Stream"
-jumpToAnchorText: "Live Stream"
+jumpToAnchor: "Video & Media"
+jumpToAnchorText: "Video"
 daysText: "Days"
 hoursText: "Hours"
 minutesText: "Minutes"
