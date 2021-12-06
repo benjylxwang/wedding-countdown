@@ -2,6 +2,7 @@
 anchor: "Photos"
 header: "Photo Timeline"
 subheader: "A few memories from our time together"
+links: []
 timeline: [
   {
     imageFileName: "about/1.jpg",

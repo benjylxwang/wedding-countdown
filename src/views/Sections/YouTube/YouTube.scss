@@ -8,6 +8,10 @@
   height: calc(960px / 16 * 9);
 }
 
+#speeches-title {
+  margin-top: 24px;
+}
+
 @media (max-width: 970px) {
   #embed {
     width: 100%;

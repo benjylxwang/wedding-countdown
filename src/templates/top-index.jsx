@@ -32,6 +32,10 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
+          additionalVideos {
+            id
+            description
+          }
           brand
           anchor
           clients {
